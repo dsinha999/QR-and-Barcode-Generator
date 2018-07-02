@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BarcodeQRCodeGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SuS-Zi-Whp">
+                                <rect key="frame" x="20" y="65" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="shg-tQ-P4m"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4B2-jg-U8f"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uoj-bP-HMI">
+                                <rect key="frame" x="20" y="120" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.90588235289999997" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ajm-cl-QGh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Generate QRCode">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nNa-cW-17w"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vy8-s0-zbj">
+                                <rect key="frame" x="62" y="195" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Adb-nA-T3L"/>
+                                    <constraint firstAttribute="height" constant="250" id="ehc-Qg-e9g"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4g-L2-M4S">
+                                <rect key="frame" x="205" y="120" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.90588235289999997" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="t91-7Z-Ij0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Generate BarCode">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateBarCodeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ITX-Uv-Yur"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vy8-s0-zbj" firstAttribute="top" secondItem="Uoj-bP-HMI" secondAttribute="bottom" constant="35" id="4Na-4T-30r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SuS-Zi-Whp" secondAttribute="trailing" constant="20" id="4U4-XW-7cq"/>
+                            <constraint firstItem="SuS-Zi-Whp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Vs-nn-9hK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U4g-L2-M4S" secondAttribute="trailing" constant="20" id="Ghp-Qc-t6G"/>
+                            <constraint firstItem="vy8-s0-zbj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qbi-du-KFF"/>
+                            <constraint firstItem="U4g-L2-M4S" firstAttribute="width" secondItem="Uoj-bP-HMI" secondAttribute="width" id="Vth-Yc-aoh"/>
+                            <constraint firstItem="U4g-L2-M4S" firstAttribute="leading" secondItem="Uoj-bP-HMI" secondAttribute="trailing" constant="35" id="Yje-Hk-Wza"/>
+                            <constraint firstItem="SuS-Zi-Whp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="ZuX-wz-DtR"/>
+                            <constraint firstItem="Uoj-bP-HMI" firstAttribute="top" secondItem="SuS-Zi-Whp" secondAttribute="bottom" constant="25" id="bHt-Zo-ttl"/>
+                            <constraint firstItem="U4g-L2-M4S" firstAttribute="top" secondItem="SuS-Zi-Whp" secondAttribute="bottom" constant="25" id="dL6-hj-dbG"/>
+                            <constraint firstItem="Uoj-bP-HMI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mVo-2M-tqy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="codeImageView" destination="vy8-s0-zbj" id="pWB-d1-9wE"/>
+                        <outlet property="generateBarCodeBtn" destination="U4g-L2-M4S" id="yIe-1U-yEt"/>
+                        <outlet property="generateButton" destination="Uoj-bP-HMI" id="fUc-WV-shO"/>
+                        <outlet property="txtField" destination="SuS-Zi-Whp" id="Kpr-2y-2N5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
