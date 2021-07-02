@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:CANCEL
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20210623T153000
+DTEND;TZID=Asia/Kolkata:20210623T163000
+DTSTAMP:20210623T073624Z
+ORGANIZER;CN=yashee.jaiswal@saffrontech.net:mailto:yashee.jaiswal@saffronte
+ ch.net
+UID:4f87v6hitaah19g2oqlg77k358_R20210611T100000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ds
+ inha6193@gmail.com;X-NUM-GUESTS=0:mailto:dsinha6193@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Sc
+ ott M. Wendrychowicz;X-NUM-GUESTS=0:mailto:smwendy23@aol.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Br
+ ijyot Birdy;X-NUM-GUESTS=0:mailto:brijyot.birdy@saffrontech.net
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=yashee
+ .jaiswal@saffrontech.net;X-NUM-GUESTS=0:mailto:yashee.jaiswal@saffrontech.n
+ et
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=pr
+ aveen.kumar@saffrontech.net;X-NUM-GUESTS=0:mailto:praveen.kumar@saffrontech
+ .net
+RECURRENCE-ID;TZID=Asia/Kolkata:20210623T153000
+CREATED:20210602T093430Z
+DESCRIPTION:Yashee Jaiswal is inviting you to a scheduled Zoom meeting.\n\n
+ Join Zoom Meeting\nhttps://us02web.zoom.us/j/89018980884\n\nMeeting ID: 890
+  1898 0884\nOne tap mobile\n+12532158782\,\,89018980884# US (Tacoma)\n+1301
+ 7158592\,\,89018980884# US (Washington DC)\n\nDial by your location\n      
+   +1 253 215 8782 US (Tacoma)\n        +1 301 715 8592 US (Washington DC)\n
+         +1 312 626 6799 US (Chicago)\n        +1 346 248 7799 US (Houston)\
+ n        +1 646 876 9923 US (New York)\n        +1 669 900 6833 US (San Jos
+ e)\nMeeting ID: 890 1898 0884\nFind your local number: https://us02web.zoom
+ .us/u/kgQUCwpWQ\n\n
+LAST-MODIFIED:20210623T073623Z
+LOCATION:https://us02web.zoom.us/j/89018980884
+SEQUENCE:3
+STATUS:CANCELLED
+SUMMARY:Syml Life Weekly Update
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
